@@ -2,11 +2,11 @@ body {
   padding: 0;
   margin: 0;
   position: relative;
-  text-align: center;
   background-image: linear-gradient( rgba(255,255,255,0.6), rgba(0,0,0,0.6));
   background-color: rgb(232,228,149);
   font-family: 'Alegreya', serif;
   color: #2B2824;
+  font-size: 16px;
   -webkit-animation: back_color 10s infinite;
   -moz-animation: back_color 10s infinite;
 }
@@ -26,7 +26,9 @@ h1{
   font-family: 'Play', sans-serif;
   font-weight: 400;
   font-size: 40px;
+  text-align: center;
 }
+
 
 .ball_1{
   border: 5px solid #0D5961;
@@ -34,57 +36,80 @@ h1{
   height: 100px;
   width: 100px;
   position: relative;
-  animation: move 10s infinite normal ease-in-out;
-  -webkit-animation: move 10s infinite normal ease-in-out;
-  -moz-animation: move 10s normal ease-in-out;
+  animation: move 5s normal linear;
+  -webkit-animation: move 5s normal linear;
+  -moz-animation: move 5s normal linear;
 
 }
 
+section {
+  padding-left: 30px;
+
+
+}
+
+.subhead, section p{
+  display: inline-block;
+}
+
+.subhead{
+  font-family: 'Play', sans-serif;
+  font-size: 24px;
+  color: #6B051C;
+}
+
+section p{
+  font-family: 'Alegreya', serif;
+  color: #2B2824;
+  font-size: 18px;
+  margin-left: 30px;
+}
+
+.phone {
+
+}
+
+.email {
+  margin-top: -15px;
+}
+
+.about {
+
+}
+.dogs {
+  width: 700px;
+  text-align: center;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+  padding: 0 10px 0 10px;
+
+}
+
+/*ANIMATIONS*/
 
 @-webkit-keyframes back_color {
-  25%{
-    background-color: rgb(13,89,97);
-  }
-  50%{
-    background-color: rgb(107,5,28);
-  }
-    75%{
-      background-color: rgb(232,228,149);
-    }
+  25%{ background-color: rgb(13,89,97);}
+  50%{ background-color: rgb(107,5,28);}
+  75%{ background-color: rgb(232,228,149);}
   }
 
 @-webkit-keyframes move {
-    0% {
-      left: -300px;
-    }
-    50% {
-      left: 550px;
-    }
-    100% {
-      left: 1400px;
-    }
+    0% {left: 0%;}
+    50% {left: 50%;}
+    100% {left: 85%;}
   }
 
   @keyframes move {
-    0% {
-      left: -300px;
-    }
-    50% {
-      left: 550px;
-    }
-    100% {
-      left: 1400px;
-    }
+    0% {left: 0%;}
+    50% {left: 50%;}
+    100% {left: 85%;}
   }
 
   @-moz-keyframes move {
-    0% {
-      left: -300px;
-    }
-    50% {
-      left: 550px;
-    }
-    100% {
-      left: 1400px;
-    }
+    0% {left: 0%;}
+    50% {left: 50%;}
+    100% {left: 85%;}
   }
