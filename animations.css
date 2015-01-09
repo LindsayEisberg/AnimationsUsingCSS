@@ -42,9 +42,9 @@ body {
 }
 
 #box2{
-  animation: nameload 1s;
-  -webkit-animation: nameload 1s;
-  -moz-animation: nameload 1s;
+  animation: nameload 2s;
+  -webkit-animation: nameload 2s;
+  -moz-animation: nameload 2s;
 }
 
 #box3{
@@ -214,18 +214,21 @@ img:hover {
   }
 
 @-webkit-keyframes nameload {
-  from {-webkit-transform:translate(0px, 1000px)}
-  to {-webkit-transform:translate(0px, 0px)}
+  0% {-webkit-transform:translate(0px, 1000px) rotate(90deg)}
+  50% {-webkit-transform:rotate(180deg)}
+  100% {-webkit-transform:translate(0px, 0px)}
 }
 
 @-moz-keyframes nameload {
-  from {-moz-transform:translate(0px, 1000px)}
-  to {-moz-transform:translate(0px, 0px)}
+  0% {-moz-transform:translate(0px, 1000px) rotate(90deg)}
+  50% {-moz-transform:rotate(180deg)}
+  100% {-moz-transform:translate(0px, 0px)}
 }
 
 @keyframes nameload {
-  from {transform:translate(0px, 1000px)}
-  to {transform:translate(0px, 0px)}
+  0% {transform:translate(0px, 1000px) rotate(90deg)}
+  50% {transform:rotate(180deg)}
+  100% {transform:translate(0px, 0px)}
 }
 
 @-webkit-keyframes rotateWord {
